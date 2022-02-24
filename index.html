@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur notre plateforme, inscrivez-vous ou connectez-vous!</h1>
+
+        <form class="btns">
+            <button class="inscription">S'incrire</button>
+            <button class="connexion">Se connecter</button>
+            <button class="deconnexion">Se déconnecter</button>
+        </form>
+
+        <p class="info">Contenu public.</p>
+
+        <form class="form-inscription">
+            <h2>Inscription</h2>
+            <label for="emailInscription">Entrer un email</label>
+            <input type="email" class="email-inscription" id="emailInscription">
+
+            <label for="pwInscription">Entrer votre mot de passe</label>
+            <input type="password" class="pw-inscription" id="pwInscription">
+            
+            <button type="submit">S'inscrire</button>
+        </form>
+
+        <form class="form-connexion">
+            <h2>Connexion</h2>
+            <label for="emailConnexion">Entrer un email</label>
+            <input type="email" class="email-connexion" id="emailConnexion">
+
+            <label for="pwconnexion">Entrer votre mot de passe</label>
+            <input type="password" class="pw-connexion" id="pwConnexion">
+            
+            <button type="submit">Se connecter</button>
+        </form>
+        
+    </div>
+
+
+
+
+
+
+
+    
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBXLNrHm5JIrvN1h26NcExD69NlLhUl6jU",
+        authDomain: "authentification-js-fbab4.firebaseapp.com",
+        databaseURL: "https://authentification-js.firebaseio.com",
+        projectId: "authentification-js-fbab4",
+        storageBucket: "authentification-js-fbab4.appspot.com",
+        messagingSenderId: "380950570953",
+        appId: "1:380950570953:web:f1ce25e0d051ffd4026a18"
+       
+    };
+    // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+
+    console.log(auth);
+    </script>
+
+
+
+
+
+
+    <script src="/src/index.js"></script>
+</body>
+</html>

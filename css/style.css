@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #b993d6, #8ca6db);
+  font-family: "Rowdies", cursive;
+  height: 100vh;
+}
+
+.container {
+  margin: 25px auto;
+  max-width: 800px;
+  text-align: center;
+}
+.container h1 {
+  margin: 2rem 0;
+}
+.container form {
+  margin: 50px;
+}
+.container form button {
+  width: 110px;
+  height: 30px;
+  font-family: "Rowdies", cursive;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+.container form button:active {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.3);
+}
+.container .form-inscription, .container .form-connexion {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  min-height: 300px;
+  background: #333;
+  color: #f1f1f1;
+  border-radius: 7px;
+  padding: 0.5rem;
+  margin: 15px auto 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .form-inscription h2, .container .form-connexion h2 {
+  text-decoration: underline;
+}
+.container .form-inscription input, .container .form-connexion input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  font-family: "Rowdies", cursive;
+  font-size: 1rem;
+}
+.container .form-inscription label, .container .form-connexion label {
+  margin-top: 1rem;
+}
+.container .form-inscription button, .container .form-connexion button {
+  margin: 0 auto;
+}
+.container .apparition {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
